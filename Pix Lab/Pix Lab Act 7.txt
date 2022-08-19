@@ -1,0 +1,2 @@
+1. 10 times for the first "for" loop and 9 times for the second "for" loop. 10 * 9 = 90 total times the body would be run.
+2. 6 times for the first "for" loop and 15 times for the second "for" loop. 6 * 15 = 90 total times the body would be run.

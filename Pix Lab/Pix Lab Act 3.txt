@@ -1,0 +1,7 @@
+1. The row index for the top left corner of the picture is 0.
+2. The column index for the top left corner of the picture is 0.
+3. The right most column index is 639.
+4. The bottom most row index is 479.
+5. The row index increase from top to bottom.
+6. The column index increase from left to right.
+7. You can see a 128 by 96 pixel section of the picture as individual squares.
