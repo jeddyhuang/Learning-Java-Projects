@@ -1,0 +1,5 @@
+Situations:
+1. In this situation, Insertion Sort would be the best method. You would only have to go through the list once to verify if all the numbers are sorted, which the problem tells us that they have already been sorted.
+2. This situation would be best sorted by using the Selection Sort. That way, it would only have to swap half the numbers while only having to the remaining numbers in the set.
+3. Depending on where the sorted section of the array is found, Insertion Sort would be the best due to having to just go through the sorted section once and building upon it afterwards rather than scrambling everything like the other methods and rebuilding the array.
+4. Merge Sorting is the best for this as all the numbers are randomized and you know that none of the items have been sorted yet. The other methods are too time consuming to constantly check while this method splits everything up before merging them together.

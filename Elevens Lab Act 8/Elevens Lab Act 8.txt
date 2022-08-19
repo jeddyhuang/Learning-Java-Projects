@@ -1,0 +1,11 @@
+1. Similarities:
+All the games are single player games.
+All the games are played on a board with cards.
+The cards for each game are selected for removal based two rules: the cards’ point values add up to the specific sum, or there is a specific group of face cards.
+Differences:
+The number of cards on the board is different in each game.
+The sums differ in each game.
+The specific groups of face cards differ in each game.
+2. The instance variable is initialized in the Board class. Inside constructor of ElevensBoard, the values are passed into the constructor of the superclass in order to get access of the private variables.
+super(BOARD_SIZE, RANKS, SUITS, POINT_VALUES);
+3. No, the abstract methods will have to be implemented differently in the Tens and Thirteens games and will need different private helper methods to accomplish their tasks. Otherwise, the other methods such as anotherPlayIsPossible are abstract and can be implemented in the respective board game subclasses.

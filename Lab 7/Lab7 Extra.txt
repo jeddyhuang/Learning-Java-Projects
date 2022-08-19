@@ -1,0 +1,33 @@
+    public int remove(){
+        int x = 0;
+        if(size == 0){
+            return 0;
+        }
+        if(size == 1){
+            size --;
+            x = data[0];
+            data[0] = 0;
+            return x;
+        }
+        if(size == 2){
+            size --;
+            x = data[1];
+            data[1] = 0;
+            return x;
+        }
+        size --;
+        int[] temp = new int[size];
+        for(int i = 0; i < size; i++){
+            temp[i] = data[i];
+        }
+        x = data[size];
+        data = temp;
+        return x;
+    }
+    
+    public int getLast(){
+        if(size > 0){
+            return data[size - 1];
+        }
+        return 0;
+    }

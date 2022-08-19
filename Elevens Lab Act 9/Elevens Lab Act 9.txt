@@ -1,0 +1,3 @@
+1. Size is an instance variable. Because the size variable is already defined in the subclass, there is no need to create setters or getter methods in the Board class.
+2. Because removing and replacing cards is the same regardless of which game is being played (Elevens game or Thirteens game). Thus, this card method can be implemented in the Board class and does not need to be an abstract method due to its use.
+3. isLegal() and anotherPlayIsPossible() would still be called polymorphically even in this new setup. This alternate design can still work in an abstract class, but all of the methods will have to be implemented separately for each card in the game board class.

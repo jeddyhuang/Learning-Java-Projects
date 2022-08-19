@@ -1,0 +1,23 @@
+1. You only need the deck of cards and a list of those cards. Therefore, you only need the Deck and Card[] instance variables to play the game.
+2. List of steps:
+Shuffle the deck of cards;
+Deal nine cards from the deck;
+While there is a possible move,
+	If a pair exists that sums to 11,
+		Remove the pair;
+		Replace the two removed cards from the deck (if the deck is empty, do nothing);
+	Else if a triplet that contains the cards Jack, Queen, and King exists,
+		Remove the three stated cards;
+		Replace the three removed cards from the deck (if the deck is empty, do nothing);
+3. No, the ElevensBoard starter code only has the code that checks for the selected cards. It does not contain the correct methods in order to remove the selected cards from the board.
+4a. The method; dealMyCards, is called in the ElevensBoard starter code constructor and the newGame method.
+4b. The methods isLegal and anotherPlayIsPossible should call the containsPairSum11 and the containsJQK methods.
+4c. 0, 1, 3, 6, 7
+4d. public static printCards (ElevensBoard board){
+	List<Integer> Indexes = board.cardIndexes();
+	for(Integer andrew : cIndexes){
+		int x = andrew.intValue();
+		System.out.println(board.cardAt(x));
+	}
+}
+4e. The method anotherPlayIsPossible needs to call to the cardIndexes method before calling to the containsPairSum11 and to the containsJQK methods. It needs to do this in order to get the indexes of all the cards on the board (all the non-null cards) so that it can check to see if the board contains another pair of cards that sum to 11 or another JQK-triplet.

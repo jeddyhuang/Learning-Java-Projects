@@ -1,0 +1,10 @@
+1. Method isEmpty
+When analyzing the empty deck, they must have had a mistake in setting the method isEmpty into outputting false and true when the size of the deck is equal to zero.
+2. Method deal
+Within the method Deal, it may have reduced the size amount by more than 1 at a time causing an out of bound error when dealing cards down to size one.
+3. Method shuffle
+When returning the shuffled deck, they may have returned the original unchanged deck instead of updating the original deck with the temporary shuffled deck.
+4. Method deal
+They might have set the deal to the deck size of 1 instead of 0 so they mioght have had an issue in when they should return null during a deal.
+5. Method deal
+They might have continued to deal from an empty set of cards resulting in an out of bound error and they should have ended the dealings when the size of the deck reached zero.
